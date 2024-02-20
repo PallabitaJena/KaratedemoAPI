@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/Runner\/features\/FusoExample[1:22]","start":1691736821878,"end":1691736825082,"title":"examples\/Runner\/features\/FusoExample[1:22] 15:53:41.878-15:53:45.082 Create a new member with POST api request"},{"id":2,"group":2,"content":"examples\/Runner\/features\/FusoExample[2:46]","start":1691736821878,"end":1691736825761,"title":"examples\/Runner\/features\/FusoExample[2:46] 15:53:41.878-15:53:45.761 Get the created new member with GET api request"},{"id":3,"group":3,"content":"examples\/Runner\/features\/FusoExample[3:56]","start":1691736821878,"end":1691736823955,"title":"examples\/Runner\/features\/FusoExample[3:56] 15:53:41.878-15:53:43.955 Validate the json schema of Get Request","className":"failed"},{"id":4,"group":4,"content":"examples\/Runner\/features\/FusoExample[4:72]","start":1691736821878,"end":1691736825984,"title":"examples\/Runner\/features\/FusoExample[4:72] 15:53:41.878-15:53:45.984 Update the created new member with PUT api request"},{"id":5,"group":5,"content":"examples\/Runner\/features\/FusoExample[5:88]","start":1691736825995,"end":1691736829586,"title":"examples\/Runner\/features\/FusoExample[5:88] 15:53:45.995-15:53:49.586 Delete the created new member with DELETE api request"},{"id":6,"group":3,"content":"examples\/Runner\/features\/No5-CommonUtil[1:3]","start":1691736823962,"end":1691736823978,"title":"examples\/Runner\/features\/No5-CommonUtil[1:3] 15:53:43.962-15:53:43.978 System Time (as a string)"},{"id":7,"group":3,"content":"examples\/Runner\/features\/No5-CommonUtil[2:11]","start":1691736823984,"end":1691736823988,"title":"examples\/Runner\/features\/No5-CommonUtil[2:11] 15:53:43.984-15:53:43.988 Random Number (0 to max-1)"},{"id":8,"group":3,"content":"examples\/Runner\/features\/No5-CommonUtil[3:19]","start":1691736823993,"end":1691736824003,"title":"examples\/Runner\/features\/No5-CommonUtil[3:19] 15:53:43.993-15:53:44.003 Case Insensitive Comparison"},{"id":9,"group":3,"content":"examples\/Runner\/features\/No5-CommonUtil[4:27]","start":1691736824007,"end":1691736824026,"title":"examples\/Runner\/features\/No5-CommonUtil[4:27] 15:53:44.007-15:53:44.026 Sleep or Wait for pause milliseconds"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

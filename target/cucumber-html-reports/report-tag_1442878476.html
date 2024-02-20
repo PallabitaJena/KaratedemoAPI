@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @parallel=false</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>karatePOC</td>
+      <td>11 Aug 2023, 16:05</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@parallel=false</td>
+          <td      class="passed"    >45</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">45</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="3560944600">3.560</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1110342189.html">examples/Runner/features/FusoExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_1442878476.html">@parallel=false</a>
+       <a href="report-tag_2210141209.html">@tag4</a>
+</div>
+
+
+  <span class="lead-duration duration">3.560</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Update the created new member with PUT api request</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def ranVal =  random_string(5)</span>
+
+  <span class="lead-duration duration">0.020</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print ranVal</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:04:53.738 [print] 1ZFVN 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody = read('classpath:examples/resources/updateMember.json')</span>
+
+  <span class="lead-duration duration">0.037</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set jsonBody.name = ranVal</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set jsonBody.email_address = ranVal+'@ibm.com'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set jsonBody.user_id = ranVal</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def MemberName = call read('FusoExample.feature@create')</span>
+
+  <span class="lead-duration duration">1.197</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">examples/Runner/features/FusoExample.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># * configure headers = { Authorization: '#(&quot;Bearer &quot; + __arg.bearerAuth.accessToken)' }</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def SchemaUtils = Java.type('examples.utils.JsonSchemaUtils')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bearerAuth = callonce read('tockenGeneration.feature@tag1')</span>
+
+  <span class="lead-duration duration">0.327</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:04:54.115 &lt;&lt; lock released, cached callonce: read('tockenGeneration.feature@tag1')
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">examples/Runner/features/tockenGeneration.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">url 'https://login.microsoftonline.com/2c7b7803-cee7-428b-8bc7-db9705d09fa6/oauth2/v2.0/token'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>16:04:53.790 &gt;&gt; lock acquired, begin callonce: read('tockenGeneration.feature@tag1')
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">header Content-Type = 'application/x-www-form-urlencoded;charset=UTF-8'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">form field grant_type = grant_typeV</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">form field client_id = client_idV</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">form field scope = scopeV</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">form field client_secret = client_secretV</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">form field username = usernameV</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">form field password = passwordV</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.313</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>16:04:53.799 request:
+1 &gt; POST https://login.microsoftonline.com/2c7b7803-cee7-428b-8bc7-db9705d09fa6/oauth2/v2.0/token
+1 &gt; Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+1 &gt; Content-Length: 338
+1 &gt; Host: login.microsoftonline.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=password&amp;client_id=fa54abbf-c88d-4d72-a586-6b8ef229a589&amp;scope=https%3A%2F%2Ftruckonnect.onmicrosoft.com%2F55f698e1-251e-4aa9-87e4-3025351dc8f7%2Fuser_impersonation+User.Read+openid+profile+offline_access&amp;client_secret=w1p8Q%7E6cDlfh2NclFd5SJ6g.vxU8YybDB03bmaI_&amp;username=pkotres.fusoqa%40qa.truckonnect.jp&amp;password=Lower%4020%21
+
+16:04:54.110 response time in milliseconds: 309
+1 &lt; 200
+1 &lt; Cache-Control: no-store, no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Expires: -1
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; P3P: CP=&quot;DSP CUR OTPi IND OTRi ONL FIN&quot;
+1 &lt; x-ms-request-id: d3f5a8bc-721d-48b5-9099-3501298a2400
+1 &lt; x-ms-ests-server: 2.1.16042.2 - SEASLR1 ProdSlices
+1 &lt; X-XSS-Protection: 0
+1 &lt; Set-Cookie: fpc=ApzZIfQ6_xBNgcTU5h06oCvkyp9wAQAAAJTUZ9wOAAAA; expires=Sun, 10-Sep-2023 07:04:53 GMT; path=/; secure; HttpOnly; SameSite=None
+1 &lt; Set-Cookie: x-ms-gateway-slice=estsfd; path=/; secure; samesite=none; httponly
+1 &lt; Set-Cookie: stsservicecookie=estsfd; path=/; secure; samesite=none; httponly
+1 &lt; Date: Fri, 11 Aug 2023 07:04:53 GMT
+1 &lt; Content-Length: 3756
+{&quot;token_type&quot;:&quot;Bearer&quot;,&quot;scope&quot;:&quot;https://truckonnect.onmicrosoft.com/55f698e1-251e-4aa9-87e4-3025351dc8f7/user_impersonation&quot;,&quot;expires_in&quot;:4177,&quot;ext_expires_in&quot;:4177,&quot;access_token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL3RydWNrb25uZWN0Lm9ubWljcm9zb2Z0LmNvbS81NWY2OThlMS0yNTFlLTRhYTktODdlNC0zMDI1MzUxZGM4ZjciLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yYzdiNzgwMy1jZWU3LTQyOGItOGJjNy1kYjk3MDVkMDlmYTYvIiwiaWF0IjoxNjkxNzM3MTkzLCJuYmYiOjE2OTE3MzcxOTMsImV4cCI6MTY5MTc0MTY3MSwiYWNyIjoiMSIsImFpbyI6IkFUUUF5LzhVQUFBQTdtdVdRSURtb0kxNk5hRXpHcVNtZEY4bTQrTkRWM256VzF6Q1M2WXN4eWp1ZTQ0L0orN0hDaXNLcWpmZmhUVDMiLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiZmE1NGFiYmYtYzg4ZC00ZDcyLWE1ODYtNmI4ZWYyMjlhNTg5IiwiYXBwaWRhY3IiOiIxIiwiaXBhZGRyIjoiMTIyLjE3MS4xOS40NyIsIm5hbWUiOiJQcmF0ZWVrTUwiLCJvaWQiOiI0M2E4NjZjOS0xZGM1LTQyYjQtYTg5ZC00ZWFkYzAxOWY2M2YiLCJyaCI6IjAuQVZRQUEzaDdMT2ZPaTBLTHg5dVhCZENmcG5LazExOHQyMmhQc1pfUnFyMnhKOTFVQUVJLiIsInNjcCI6InVzZXJfaW1wZXJzb25hdGlvbiIsInN1YiI6Imd0M0hyODFHalMwUDJTamNRSmhJVEJUVzBJSVd2TlJ3ajE1Q3hyc1VxZVUiLCJ0aWQiOiIyYzdiNzgwMy1jZWU3LTQyOGItOGJjNy1kYjk3MDVkMDlmYTYiLCJ1bmlxdWVfbmFtZSI6InBrb3RyZXMuZnVzb3FhQHFhLnRydWNrb25uZWN0LmpwIiwidXBuIjoicGtvdHJlcy5mdXNvcWFAcWEudHJ1Y2tvbm5lY3QuanAiLCJ1dGkiOiJ2S2oxMHgxeXRVaVFtVFVCS1lva0FBIiwidmVyIjoiMS4wIn0.HnJxmhGLLoknpqR4L5s-v-BB5LWm6ZGNdocLqlFyb40Fl9IuiCRFfQGyCAPN3su42saiD_sc2HzSqRRkraip4xgBngO6DS00q1vma29QD2gyLzZEzxvwFjZaoVpONZIWcGAQQNMJn6MFvmF1d6A0ZEteOEhWP3E3FdWImy1KcqOpitYdfjAsrLp1e3c8tfYqYPRCxUnGbmBFx_Vgao5i_NY4fsa-Nhnxz_aCayivHrtTtyEUDqTBoFhSQmGAJ5gf-2QL8b34euqMMhGjqD88ZZbUa30U867srMyqwuleBz4Mu-B_i3vXB8mQCWzxUAAxjn7iiqNwC6M1mDUYGgVeGg&quot;,&quot;refresh_token&quot;:&quot;0.AVQAA3h7LOfOi0KLx9uXBdCfpr-rVPqNyHJNpYZrjvIppYlUAEI.AgABAAEAAAAtyolDObpQQ5VtlI4uGjEPAgDs_wUA9P8Rt01JUjrs9-VBqW4cVFgBqgRx_6ZvseHmbyhuUun-8rlCAVA7_B2SOED1qZxLvTz_U4TJnP_QASciTeQrz-QlprY1buoFwDY9r-TpOEYswX6uP3F2SNLlqT8iWRZdPBAd3bsZVa6mdZ-fQgC0PBDIYxnozPMwl3uDWrx2FC5RFCo4uUohEgiwuB9fqoBa52munMkvtfkqp4j1RXFBLj8aRkeyNfq7ZHCrkkG4PtWgvYLBKFRV8WTi9zvcqcgIxLh5ncmt8TBx01pMVHEw9OtQASaeVsBw-Xt6InxTzFYfUWcza750mi_ze54jxsDYaEPcEytK4E1HkRxho3xxiFYYxhFpvWeJ1EgLcq4aszZNWDjxV6AVvls-qbzAIP9RLwxBdvNHGXqSCje60UtK4p4xRdIJfSzXPIr8Z6ZG8YyzYofd5yr9mRz7ynWJzdiRq26Ypja7TgV2bWJYEmkP6CSUtyORYu3MPcagxhCJ5KO1FlVIUc3r_spjHqoag6XD5-dZuD4QrW0N7d_fDYveliYvvKl89QM2eLI4ye_uXId05eNqAjfjYNSwprLz3Xj4abEZZ_F32S-Rdxb4nBRz6xP2xmSSYexM5DcJ__622Rl01wfntVKWfPhfp00Zu487McmhzzW1MWZqxDV_hgxUUnmZzrHM2lowb8-MxpG_0XYJFuTHJKVLULk9DqKW-tjOQTEfgomuXgw&quot;,&quot;id_token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJmYTU0YWJiZi1jODhkLTRkNzItYTU4Ni02YjhlZjIyOWE1ODkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vMmM3Yjc4MDMtY2VlNy00MjhiLThiYzctZGI5NzA1ZDA5ZmE2L3YyLjAiLCJpYXQiOjE2OTE3MzcxOTMsIm5iZiI6MTY5MTczNzE5MywiZXhwIjoxNjkxNzQxMDkzLCJhaW8iOiJBVFFBeS84VUFBQUFXdkxvRzB6U2JIUzBzZ3lNNjZBSjVXNmMzaUZpSnlYNkwwalVNOWN4by9kUU9kUjJwazZKNUVlVXo2VVZ3VUhQIiwibmFtZSI6IlByYXRlZWtNTCIsIm9pZCI6IjQzYTg2NmM5LTFkYzUtNDJiNC1hODlkLTRlYWRjMDE5ZjYzZiIsInByZWZlcnJlZF91c2VybmFtZSI6InBrb3RyZXMuZnVzb3FhQHFhLnRydWNrb25uZWN0LmpwIiwicmgiOiIwLkFWUUFBM2g3TE9mT2kwS0x4OXVYQmRDZnByLXJWUHFOeUhKTnBZWnJqdklwcFlsVUFFSS4iLCJzdWIiOiI0TzhFNjEyTi02RkFXVHpxcGFHaWdyZXlGTmxtRjZJUmVZeHFxQzRNWm00IiwidGlkIjoiMmM3Yjc4MDMtY2VlNy00MjhiLThiYzctZGI5NzA1ZDA5ZmE2IiwidXRpIjoidktqMTB4MXl0VWlRbVRVQktZb2tBQSIsInZlciI6IjIuMCJ9.LIuYfbwHwckpJJMFPD_l4gYTJRc3zYtTd9fqaY36n3zRkxYZfvxrnO9IbWDbFJF1dJ4KPdc4pobwCkk9DTm3GXCcfUIQsplLG7TDoMWlTJQ2kUGJItGiz_7OLh9Svp6U_Brzoh_gmW0DLBQSPnC1YICjQyBFPF4I9LDuJf3PVaP-g_3OxRfOejwoY0JKutVpfXhppUJZbZNa6ih85eC07MP3atsXQFboYkaMhXs2H4TjdnYNGYOKhWjez3zzY5CsTkE8u-pmPkpmP8tl14T9m0W8guEOo9RR_FTzN7y1sxOYkzr2xZvxIy5gnMNKaKlAbiPn1Z2LOpCbpBuBxJxsQQ&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def accessToken = response.access_token</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">print 'The generated access token is :', accessToken</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>16:04:54.114 [print] The generated access token is : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL3RydWNrb25uZWN0Lm9ubWljcm9zb2Z0LmNvbS81NWY2OThlMS0yNTFlLTRhYTktODdlNC0zMDI1MzUxZGM4ZjciLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yYzdiNzgwMy1jZWU3LTQyOGItOGJjNy1kYjk3MDVkMDlmYTYvIiwiaWF0IjoxNjkxNzM3MTkzLCJuYmYiOjE2OTE3MzcxOTMsImV4cCI6MTY5MTc0MTY3MSwiYWNyIjoiMSIsImFpbyI6IkFUUUF5LzhVQUFBQTdtdVdRSURtb0kxNk5hRXpHcVNtZEY4bTQrTkRWM256VzF6Q1M2WXN4eWp1ZTQ0L0orN0hDaXNLcWpmZmhUVDMiLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiZmE1NGFiYmYtYzg4ZC00ZDcyLWE1ODYtNmI4ZWYyMjlhNTg5IiwiYXBwaWRhY3IiOiIxIiwiaXBhZGRyIjoiMTIyLjE3MS4xOS40NyIsIm5hbWUiOiJQcmF0ZWVrTUwiLCJvaWQiOiI0M2E4NjZjOS0xZGM1LTQyYjQtYTg5ZC00ZWFkYzAxOWY2M2YiLCJyaCI6IjAuQVZRQUEzaDdMT2ZPaTBLTHg5dVhCZENmcG5LazExOHQyMmhQc1pfUnFyMnhKOTFVQUVJLiIsInNjcCI6InVzZXJfaW1wZXJzb25hdGlvbiIsInN1YiI6Imd0M0hyODFHalMwUDJTamNRSmhJVEJUVzBJSVd2TlJ3ajE1Q3hyc1VxZVUiLCJ0aWQiOiIyYzdiNzgwMy1jZWU3LTQyOGItOGJjNy1kYjk3MDVkMDlmYTYiLCJ1bmlxdWVfbmFtZSI6InBrb3RyZXMuZnVzb3FhQHFhLnRydWNrb25uZWN0LmpwIiwidXBuIjoicGtvdHJlcy5mdXNvcWFAcWEudHJ1Y2tvbm5lY3QuanAiLCJ1dGkiOiJ2S2oxMHgxeXRVaVFtVFVCS1lva0FBIiwidmVyIjoiMS4wIn0.HnJxmhGLLoknpqR4L5s-v-BB5LWm6ZGNdocLqlFyb40Fl9IuiCRFfQGyCAPN3su42saiD_sc2HzSqRRkraip4xgBngO6DS00q1vma29QD2gyLzZEzxvwFjZaoVpONZIWcGAQQNMJn6MFvmF1d6A0ZEteOEhWP3E3FdWImy1KcqOpitYdfjAsrLp1e3c8tfYqYPRCxUnGbmBFx_Vgao5i_NY4fsa-Nhnxz_aCayivHrtTtyEUDqTBoFhSQmGAJ5gf-2QL8b34euqMMhGjqD88ZZbUa30U867srMyqwuleBz4Mu-B_i3vXB8mQCWzxUAAxjn7iiqNwC6M1mDUYGgVeGg 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def random_string =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>function(s) {
+  var text = &quot;&quot;;
+  var possible = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789&quot;;
+  for (var i = 0; i &lt; s; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  return text;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def length = 9</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def value = length</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def ranVal =  random_string(value)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def jsonBody = read('classpath:examples/resources/CreateMember.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set jsonBody.name = ranVal</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set jsonBody.email_address = ranVal+'@ibm.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set jsonBody.user_id = ranVal</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url BaseURL+'/users'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer '+bearerAuth.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request jsonBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.851</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>16:04:54.124 request:
+1 &gt; POST https://dtaccpqamgmt.azure-api.net/users
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL3RydWNrb25uZWN0Lm9ubWljcm9zb2Z0LmNvbS81NWY2OThlMS0yNTFlLTRhYTktODdlNC0zMDI1MzUxZGM4ZjciLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yYzdiNzgwMy1jZWU3LTQyOGItOGJjNy1kYjk3MDVkMDlmYTYvIiwiaWF0IjoxNjkxNzM3MTkzLCJuYmYiOjE2OTE3MzcxOTMsImV4cCI6MTY5MTc0MTY3MSwiYWNyIjoiMSIsImFpbyI6IkFUUUF5LzhVQUFBQTdtdVdRSURtb0kxNk5hRXpHcVNtZEY4bTQrTkRWM256VzF6Q1M2WXN4eWp1ZTQ0L0orN0hDaXNLcWpmZmhUVDMiLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiZmE1NGFiYmYtYzg4ZC00ZDcyLWE1ODYtNmI4ZWYyMjlhNTg5IiwiYXBwaWRhY3IiOiIxIiwiaXBhZGRyIjoiMTIyLjE3MS4xOS40NyIsIm5hbWUiOiJQcmF0ZWVrTUwiLCJvaWQiOiI0M2E4NjZjOS0xZGM1LTQyYjQtYTg5ZC00ZWFkYzAxOWY2M2YiLCJyaCI6IjAuQVZRQUEzaDdMT2ZPaTBLTHg5dVhCZENmcG5LazExOHQyMmhQc1pfUnFyMnhKOTFVQUVJLiIsInNjcCI6InVzZXJfaW1wZXJzb25hdGlvbiIsInN1YiI6Imd0M0hyODFHalMwUDJTamNRSmhJVEJUVzBJSVd2TlJ3ajE1Q3hyc1VxZVUiLCJ0aWQiOiIyYzdiNzgwMy1jZWU3LTQyOGItOGJjNy1kYjk3MDVkMDlmYTYiLCJ1bmlxdWVfbmFtZSI6InBrb3RyZXMuZnVzb3FhQHFhLnRydWNrb25uZWN0LmpwIiwidXBuIjoicGtvdHJlcy5mdXNvcWFAcWEudHJ1Y2tvbm5lY3QuanAiLCJ1dGkiOiJ2S2oxMHgxeXRVaVFtVFVCS1lva0FBIiwidmVyIjoiMS4wIn0.HnJxmhGLLoknpqR4L5s-v-BB5LWm6ZGNdocLqlFyb40Fl9IuiCRFfQGyCAPN3su42saiD_sc2HzSqRRkraip4xgBngO6DS00q1vma29QD2gyLzZEzxvwFjZaoVpONZIWcGAQQNMJn6MFvmF1d6A0ZEteOEhWP3E3FdWImy1KcqOpitYdfjAsrLp1e3c8tfYqYPRCxUnGbmBFx_Vgao5i_NY4fsa-Nhnxz_aCayivHrtTtyEUDqTBoFhSQmGAJ5gf-2QL8b34euqMMhGjqD88ZZbUa30U867srMyqwuleBz4Mu-B_i3vXB8mQCWzxUAAxjn7iiqNwC6M1mDUYGgVeGg
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 243
+1 &gt; Host: dtaccpqamgmt.azure-api.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;branch_id&quot;:24166,&quot;role_id&quot;:3,&quot;name&quot;:&quot;K42VYJCOI&quot;,&quot;email_address&quot;:&quot;K42VYJCOI@ibm.com&quot;,&quot;valid_email&quot;:true,&quot;user_id&quot;:&quot;K42VYJCOI&quot;,&quot;password&quot;:&quot;Momdad@24&quot;,&quot;passwordChanged&quot;:true,&quot;passwordConfirmation&quot;:&quot;Momdad@24&quot;,&quot;passwordConfirmationChanged&quot;:true}
+
+16:04:54.974 response time in milliseconds: 849
+1 &lt; 201
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Vary: accept-encoding
+1 &lt; Set-Cookie: ARRAffinity=4b7abf724f8a9d51aed576980e7bd16653881981c819b7f1d1117c6143c424c1;Path=/;HttpOnly;Secure;Domain=dta-ccp-qa-api.azurewebsites.net
+1 &lt; Set-Cookie: ARRAffinitySameSite=4b7abf724f8a9d51aed576980e7bd16653881981c819b7f1d1117c6143c424c1;Path=/;HttpOnly;SameSite=None;Secure;Domain=dta-ccp-qa-api.azurewebsites.net
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Date: Fri, 11 Aug 2023 07:04:54 GMT
+{&quot;branch&quot;:&quot;Test&quot;,&quot;isMainBranch&quot;:0,&quot;id&quot;:&quot;K42VYJCOI.fusoqa@qa.truckonnect.jp&quot;,&quot;email_address&quot;:&quot;K42VYJCOI@ibm.com&quot;,&quot;name&quot;:&quot;K42VYJCOI&quot;,&quot;company_id&quot;:3,&quot;branch_id&quot;:24166,&quot;driver_id&quot;:null,&quot;role_id&quot;:3,&quot;role&quot;:&quot;VIEWER&quot;,&quot;is_first_login&quot;:true,&quot;member_id&quot;:5723,&quot;phone&quot;:null,&quot;emergency_phone&quot;:null,&quot;valid_email&quot;:false,&quot;is_display_guide&quot;:false}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def statusReceived = responseStatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def id = response.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def member_id = response.member_id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseURL+'/users/'+MemberName.id+'/'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer '+bearerAuth.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PUT</span>
+
+  <span class="lead-duration duration">0.791</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>16:04:54.980 request:
+1 &gt; PUT https://dtaccpqamgmt.azure-api.net/users/K42VYJCOI.fusoqa@qa.truckonnect.jp/
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL3RydWNrb25uZWN0Lm9ubWljcm9zb2Z0LmNvbS81NWY2OThlMS0yNTFlLTRhYTktODdlNC0zMDI1MzUxZGM4ZjciLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yYzdiNzgwMy1jZWU3LTQyOGItOGJjNy1kYjk3MDVkMDlmYTYvIiwiaWF0IjoxNjkxNzM3MTkzLCJuYmYiOjE2OTE3MzcxOTMsImV4cCI6MTY5MTc0Mjc4OSwiYWNyIjoiMSIsImFpbyI6IkFUUUF5LzhVQUFBQWVWWldlbTY4UEM5RXkvZk5kUE9ha21pY3FyUGVyckRSWk1XVUtJR0I4NHlRakhNN1VHSk9nSE8rWDFsS1hJQUciLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiZmE1NGFiYmYtYzg4ZC00ZDcyLWE1ODYtNmI4ZWYyMjlhNTg5IiwiYXBwaWRhY3IiOiIxIiwiaXBhZGRyIjoiMTIyLjE3MS4xOS40NyIsIm5hbWUiOiJQcmF0ZWVrTUwiLCJvaWQiOiI0M2E4NjZjOS0xZGM1LTQyYjQtYTg5ZC00ZWFkYzAxOWY2M2YiLCJyaCI6IjAuQVZRQUEzaDdMT2ZPaTBLTHg5dVhCZENmcG5LazExOHQyMmhQc1pfUnFyMnhKOTFVQUVJLiIsInNjcCI6InVzZXJfaW1wZXJzb25hdGlvbiIsInN1YiI6Imd0M0hyODFHalMwUDJTamNRSmhJVEJUVzBJSVd2TlJ3ajE1Q3hyc1VxZVUiLCJ0aWQiOiIyYzdiNzgwMy1jZWU3LTQyOGItOGJjNy1kYjk3MDVkMDlmYTYiLCJ1bmlxdWVfbmFtZSI6InBrb3RyZXMuZnVzb3FhQHFhLnRydWNrb25uZWN0LmpwIiwidXBuIjoicGtvdHJlcy5mdXNvcWFAcWEudHJ1Y2tvbm5lY3QuanAiLCJ1dGkiOiJONXFUcXdPWEZFT01sZFAyQmo0N0FBIiwidmVyIjoiMS4wIn0.s64HslH84bR6pFdCsZXqwxJB40TCxtlLBR7AsSY0YK8vx8c1uVsYR6I6tpcXitHj_3CnUS3rPQpo9wzHyfsTvd44uNnrknDR0YtNjzbVoXxw8MNgTvGAmTLQGJOhGBAXmIQA70wdSIazTjIZ5S4lSxMJNP3g2gtcS9XYpV8_eqi-wZ_vu03rXdB5KnvlUmCiv1V_FewK1XzlrNUm_de2iz0o-76EVwHPsz5l1cKvxjMYyl6mIoyvzNnO6XnwzWkd9B4eRGTIGhDvbqN1eGuxo25PDn9Io2FKZ-E4QrIaxUazONFNP0ZzZGpVWqI-WRROMMaWt4r5iSuI-SycgB4yVA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 362
+1 &gt; Host: dtaccpqamgmt.azure-api.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;branch&quot;:&quot;Tachotest&quot;,&quot;isMainBranch&quot;:0,&quot;id&quot;:&quot;EQPXN.fusoqa@qa.truckonnect.jp&quot;,&quot;email_address&quot;:&quot;1ZFVN@ibm.com&quot;,&quot;name&quot;:&quot;1ZFVN&quot;,&quot;company_id&quot;:3,&quot;branch_id&quot;:1256,&quot;driver_id&quot;:null,&quot;role_id&quot;:1,&quot;role&quot;:&quot;VIEWER&quot;,&quot;is_first_login&quot;:true,&quot;member_id&quot;:5153,&quot;phone&quot;:null,&quot;emergency_phone&quot;:null,&quot;valid_email&quot;:false,&quot;password&quot;:&quot;----&quot;,&quot;passwordConfirmation&quot;:&quot;----&quot;,&quot;user_id&quot;:&quot;1ZFVN&quot;}
+
+16:04:55.769 response time in milliseconds: 789
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Vary: accept-encoding
+1 &lt; Set-Cookie: ARRAffinity=4b7abf724f8a9d51aed576980e7bd16653881981c819b7f1d1117c6143c424c1;Path=/;HttpOnly;Secure;Domain=dta-ccp-qa-api.azurewebsites.net
+1 &lt; Set-Cookie: ARRAffinitySameSite=4b7abf724f8a9d51aed576980e7bd16653881981c819b7f1d1117c6143c424c1;Path=/;HttpOnly;SameSite=None;Secure;Domain=dta-ccp-qa-api.azurewebsites.net
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Content-Disposition: inline;filename=f.txt
+1 &lt; Date: Fri, 11 Aug 2023 07:04:54 GMT
+{&quot;branch&quot;:&quot;Tachotest&quot;,&quot;isMainBranch&quot;:0,&quot;id&quot;:&quot;K42VYJCOI.fusoqa@qa.truckonnect.jp&quot;,&quot;email_address&quot;:&quot;1ZFVN@ibm.com&quot;,&quot;name&quot;:&quot;1ZFVN&quot;,&quot;company_id&quot;:3,&quot;branch_id&quot;:1256,&quot;driver_id&quot;:null,&quot;role_id&quot;:1,&quot;role&quot;:&quot;ADMIN&quot;,&quot;is_first_login&quot;:true,&quot;member_id&quot;:5723,&quot;phone&quot;:null,&quot;emergency_phone&quot;:null,&quot;valid_email&quot;:false,&quot;is_display_guide&quot;:false}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

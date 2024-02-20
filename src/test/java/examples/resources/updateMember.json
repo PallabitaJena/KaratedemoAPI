@@ -1,0 +1,19 @@
+{
+  "branch": "Tachotest",
+  "isMainBranch": 0,
+  "id": "EQPXN.fusoqa@qa.truckonnect.jp",
+  "email_address": "EQPXN@ibm.com",
+  "name": "EQPXN",
+  "company_id": 3,
+  "branch_id": 1256,
+  "driver_id": null,
+  "role_id": 1,
+  "role": "VIEWER",
+  "is_first_login": true,
+  "member_id": 5153,
+  "phone": null,
+  "emergency_phone": null,
+  "valid_email": false,
+  "password": "----",
+  "passwordConfirmation": "----"
+}

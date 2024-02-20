@@ -1,0 +1,12 @@
+{
+  "branch_id": 24166,
+  "role_id": 3,
+  "name": "TestAPI12",
+  "email_address": "Pallabita.jena12@ibm.com",
+  "valid_email": true,
+  "user_id": "Test12",
+  "password": "Momdad@24",
+  "passwordChanged": true,
+  "passwordConfirmation": "Momdad@24",
+  "passwordConfirmationChanged": true
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"bbedb6ad-8d9c-4652-b8df-bb64197ab12f",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.Runner.features.feature1</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>QA</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-08-29 06:50:43 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>: Sample BlobAPI</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/Runner/features/feature1.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Single scenario having all CRUD operation in one scenario</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">: Sample BlobAPI</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>919</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:5]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:5]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = {Accept: &#39;*/*&#39;, Connection: &#39;Keep-Alive&#39;, User-Agent: &#39;PostmanRuntime/7.32.3&#39;,Accept-Encoding:&#39;gzip, deflate, br&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">18:50:42.286 karate.env system property was: QA 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://qmjecta007sa.blob.core.windows.net&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;gps/gpsresults/2023/08/26/Asia/Tokyo/FS74HZ500122XXXXX.gz?sig=JYctY9PXMeBHYmx8hGv7SoiuldougySrn2%2FBcwFH7pk%3D&amp;st=2023-08-28T08%3A28%3A01Z&amp;se=2023-08-29T08%3A28%3A01Z&amp;sv=2017-04-17&amp;sp=r&amp;sr=b&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params {sig: &#39;JYctY9PXMeBHYmx8hGv7SoiuldougySrn2%2FBcwFH7pk%3D&#39;, st: &#39;2023-08-28T08%3A28%3A01Z&#39;, se: &#39;2023-08-29T08%3A28%3A01Z&#39;, sv: &#39;2017-04-17&#39;, sp: &#39;r&#39;,sr: &#39;b&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">866</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">18:50:42.612 request:
+1 &gt; GET https://qmjecta007sa.blob.core.windows.net/gps/gpsresults/2023/08/26/Asia/Tokyo/FS74HZ500122XXXXX.gz%3Fsig=JYctY9PXMeBHYmx8hGv7SoiuldougySrn2%252FBcwFH7pk%253D&amp;st=2023-08-28T08%253A28%253A01Z&amp;se=2023-08-29T08%253A28%253A01Z&amp;sv=2017-04-17&amp;sp=r&amp;sr=b?sig=JYctY9PXMeBHYmx8hGv7SoiuldougySrn2%252FBcwFH7pk%253D&amp;st=2023-08-28T08%253A28%253A01Z&amp;se=2023-08-29T08%253A28%253A01Z&amp;sv=2017-04-17&amp;sp=r&amp;sr=b
+1 &gt; Accept: */*
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: PostmanRuntime/7.32.3
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Host: qmjecta007sa.blob.core.windows.net
+
+
+18:50:43.404 response time in milliseconds: 788
+1 &lt; 403
+1 &lt; Content-Type: application/xml
+1 &lt; Vary: Origin
+1 &lt; Server: Microsoft-HTTPAPI/2.0
+1 &lt; x-ms-request-id: 8eddec1d-101e-0059-3c5e-dad476000000
+1 &lt; Date: Tue, 29 Aug 2023 09:50:43 GMT
+1 &lt; Content-Length: 408
+﻿&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;Error&gt;&lt;Code&gt;AuthenticationFailed&lt;/Code&gt;&lt;Message&gt;Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
+RequestId:8eddec1d-101e-0059-3c5e-dad476000000
+Time:2023-08-29T09:50:43.3077160Z&lt;/Message&gt;&lt;AuthenticationErrorDetail&gt;Signature fields not well formed.&lt;/AuthenticationErrorDetail&gt;&lt;/Error&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">18:50:43.418 classpath:examples/Runner/features/feature1.feature:10
+And status 200
+status code was: 403, expected: 200, response time in milliseconds: 788, url: https://qmjecta007sa.blob.core.windows.net/gps/gpsresults/2023/08/26/Asia/Tokyo/FS74HZ500122XXXXX.gz%3Fsig=JYctY9PXMeBHYmx8hGv7SoiuldougySrn2%252FBcwFH7pk%253D&amp;st=2023-08-28T08%253A28%253A01Z&amp;se=2023-08-29T08%253A28%253A01Z&amp;sv=2017-04-17&amp;sp=r&amp;sr=b?sig=JYctY9PXMeBHYmx8hGv7SoiuldougySrn2%252FBcwFH7pk%253D&amp;st=2023-08-28T08%253A28%253A01Z&amp;se=2023-08-29T08%253A28%253A01Z&amp;sv=2017-04-17&amp;sp=r&amp;sr=b, response: 
+﻿&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;Error&gt;&lt;Code&gt;AuthenticationFailed&lt;/Code&gt;&lt;Message&gt;Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
+RequestId:8eddec1d-101e-0059-3c5e-dad476000000
+Time:2023-08-29T09:50:43.3077160Z&lt;/Message&gt;&lt;AuthenticationErrorDetail&gt;Signature fields not well formed.&lt;/AuthenticationErrorDetail&gt;&lt;/Error&gt;
+classpath:examples/Runner/features/feature1.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

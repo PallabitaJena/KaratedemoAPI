@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "branch": {
+      "type": "string"
+    },
+    "isMainBranch": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "string"
+    },
+    "email_address": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "company_id": {
+      "type": "integer"
+    },
+    "branch_id": {
+      "type": "integer"
+    },
+    "driver_id": {
+      "type": "string"
+    },
+    "role_id": {
+      "type": "integer"
+    },
+    "role": {
+      "type": "string"
+    },
+    "is_first_login": {
+      "type": "boolean"
+    },
+    "member_id": {
+      "type": "integer"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "emergency_phone": {
+      "type": "string"
+    },
+    "valid_email": {
+      "type": "boolean"
+    },
+    "is_display_guide": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "branch",
+    "isMainBranch",
+    "id",
+    "email_address",
+    "name",
+    "company_id",
+    "branch_id",
+    "driver_id",
+    "role_id",
+    "role",
+    "is_first_login",
+    "member_id",
+    "phone",
+    "emergency_phone",
+    "valid_email",
+    "is_display_guide"
+  ]
+}
